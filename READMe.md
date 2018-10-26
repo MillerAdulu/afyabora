@@ -1,7 +1,7 @@
 # Afya Bora API
 
 ## Introduction
-This was made at a Hackathon from the 19th - 21st of October 2018 held at Life Ministries Nairobi. This is the API for the mobile application available at [Afya Bora App](https://github.com/MillerAdulu/afyaboraapp). This was made by the Afya Bora team. This particular repository is adapted from the repository that was used available at [IHack](https://github.com/EdwinWalela/ihack) with minor changes in the code base while retaining the same functionality.
+This was made at a Hackathon from the 19th - 21st of October 2018 held at Life Ministries Nairobi. This is the API for the mobile application available at [Afya Bora App](https://github.com/MillerAdulu/afyaboraapp). This was made by the Afya Bora team. This particular repository is adapted from the repository that was used available at [IHack](https://github.com/EdwinWalela/ihack) with minor changes in the code base while retaining the same functionality. A live version of this API is availabe on [Heroku](https://afyabora.herokuapp.com/)
 
 ## Setup
 
@@ -10,7 +10,7 @@ This was made at a Hackathon from the 19th - 21st of October 2018 held at Life M
 3. Rename the `.env.example` file to `.env`
 4. Set a Mongo DB URI
 5. Obtain an email API key from [SendGrid](https://sendgrid.com/)
-6. Generate an encryption string from [Secure Password Generator](https://passwordsgenerator.net/)
+6. Generate an encryption string from [Secure Password Generator](https://passwordsgenerator.net/). Once generated ensure it remains the same or there may be issues regenerating the data.
 7. Set the Base URL of where the application will be hosted. This is important for email sending. eg. `https://mail.com` **not** `mail.com` or `https://mail.com/`. HTTPS is preferred.
 8. Run `yarn build` and `yarn start` :tada:
 
