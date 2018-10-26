@@ -16,6 +16,6 @@ This was made at a Hackathon from the 19th - 21st of October 2018 held at Life M
 
 ## Conclusion
 
-The project uses the `eslint-config-airbnb-base": "^13.1.0` and `eslint-plugin-import` global packages for linting.
+The project uses the `eslint-config-airbnb-base` and `eslint-plugin-import` global packages for linting.
 
 Pull requests are welcome.
