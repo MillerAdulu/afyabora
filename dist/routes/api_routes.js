@@ -121,9 +121,9 @@ router.post('/user/:id/diagnosis', function (req, res) {
 // Validate a diagnosis
 router.get('/diagnosis/:diagnosis/validate', function (req, res) {
   _diagnosis2.default.findByIdAndUpdate(req.params.diagnosis, { $set: { confirmed: true } }).then(function () {
-    res.render('This diagnosis has been validated');
+    res.json('This diagnosis has been validated');
   }).catch(function () {
-    res.redirect('http://google.com');
+    res.json('Unable to validate this diagnosis at the moment. Please try again later');
   });
 });
 

@@ -110,9 +110,9 @@ router.post('/user/:id/diagnosis', (req, res) => {
 router.get('/diagnosis/:diagnosis/validate', (req, res) => {
   Diagnosis.findByIdAndUpdate(req.params.diagnosis,
     { $set: { confirmed: true } }).then(() => {
-    res.render('This diagnosis has been validated');
+    res.json('This diagnosis has been validated');
   }).catch(() => {
-    res.redirect('http://google.com');
+    res.json('Unable to validate this diagnosis at the moment. Please try again later');
   });
 });
 
