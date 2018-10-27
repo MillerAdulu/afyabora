@@ -48,10 +48,11 @@ router.post('/user', (req, res) => {
           firstName: req.body.firstName,
           lastName: req.body.lastName,
           gender: req.body.gender,
-          weight: req.body.weight,
-          height: req.body.height,
+          weight: parseFloat(req.body.weight),
+          height: parseFloat(req.body.height),
           bloodGroup: req.body.bloodGroup,
-        }).save().then((newUser) => {
+        }).save().then((newUser, err) => {
+          if (err) res.status(500).json(err);
           res.status(200).json({
             user: {
               id: newUser._id,
