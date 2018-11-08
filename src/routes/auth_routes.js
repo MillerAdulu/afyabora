@@ -8,7 +8,7 @@ router.post('/login', (req, res) => {
   UserModel.findOne({ email: req.body.email }).then((user) => {
     bcrypt.compare(req.body.password, user.password).then((status) => {
       if (!status) {
-        res.status(404).json({
+        res.status(205).json({
           msg: 'Incorrect login credentials',
         });
       }

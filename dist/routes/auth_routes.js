@@ -22,7 +22,7 @@ router.post('/login', function (req, res) {
   _user2.default.findOne({ email: req.body.email }).then(function (user) {
     _bcrypt2.default.compare(req.body.password, user.password).then(function (status) {
       if (!status) {
-        res.status(404).json({
+        res.status(205).json({
           msg: 'Incorrect login credentials'
         });
       }
