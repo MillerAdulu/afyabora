@@ -16,7 +16,7 @@
     "dotenv": "^6.1.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.4"
+    "mongoose": "^5.12.10"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
