@@ -1219,10 +1219,10 @@ cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cryptr@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cryptr/-/cryptr-4.0.0.tgz#f6932c14b1b5ee9e10d9708b10a4e7eafc2a14d0"
-  integrity sha512-5VMafoOA6thNyF17yx0UJZTAALvkfV6QlBfo+DTnWEv1KvnDU3J4xBLGroO5Q/hiPCHQ5HrNGtN5JJBStokJ5Q==
+cryptr@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/cryptr/-/cryptr-4.0.2.tgz#8a93b5ca7667d1a6131e396bab23a134ff1f5dc6"
+  integrity sha512-gLTcYjmLGe0Kk1yyacvjNKvSdkWBNNgG2tDnbRQP7yE559x/RJLo/I3WAmwCXNXf/fzMHCNp9vDv3PCopZDpXw==
 
 dashdash@^1.12.0:
   version "1.14.1"
